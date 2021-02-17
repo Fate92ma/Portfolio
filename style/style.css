@@ -1,0 +1,573 @@
+/*
+
+Template Name: Portfolio
+Template Url: https://fate92ma.github.io/Portfolio
+Contact Me: fatema131khaled@gmail.com
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer
+}
+
+.clickme i {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 4px;
+    background: rgba(52, 58, 64, .5);
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    color: white;
+    z-index: 9999;
+    cursor: pointer
+}
+
+.close i {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 4px;
+    background: rgba(52, 58, 64, .5);
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    color: white;
+    z-index: 9999;
+    font-size: 22px;
+    cursor: pointer
+}
+
+.sidebar i:hover {
+    background: #212529
+}
+
+.sidebar-list {
+    display: none;
+    list-style: none;
+    text-align: left;
+    width: 250px;
+    color: white;
+    line-height: 50px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #1d809f;
+    height: 100vh;
+    z-index: 2
+}
+
+.sidebar-list h2 {
+    font-size: 20px;
+    font-weight: 400;
+    background: rgba(52, 58, 64, .1);
+    height: 70px;
+    line-height: 70px;
+    padding-left: 15px;
+    padding-top: 5px
+}
+
+.sidebar-list li {
+    font-size: 18px;
+    font-weight: 300;
+    padding: 5px
+}
+
+.sidebar-list li:hover {
+    background: rgba(52, 58, 64, 0.27);
+    cursor: pointer
+}
+
+@media (max-width: 300px) {
+    .sidebar-list {
+        width: 100%
+    }
+}
+
+/* Page One */
+
+.intro {
+    background: url(../img/130519.jpg) no-repeat scroll 0 0/cover;
+    height: 700px
+}
+
+.intro-desc {
+    color: #212529;
+    text-align: center;
+    width: 100%;
+    padding: 0 10px;
+    padding-top: 250px
+}
+
+.intro-desc h1 {
+    font-size: 75px
+}
+
+.intro-desc p {
+    font-style: italic;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px 0
+}
+
+.intro-btn,
+.next-btn {
+    padding: 15px;
+    background: #17a2b8;
+    border: 3px solid #17a2b8;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
+    -ms-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
+    -o-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center
+}
+
+.intro-btn a,
+.next-btn a {
+    color: white
+}
+
+.intro-btn:hover,
+.next-btn:hover {
+    background: #1d809f
+}
+
+/* Media Query For Page One */
+
+@media (max-width: 500px) {
+    .intro-desc h1 {
+        font-size: 60px
+    }
+
+    .intro-desc p {
+        font-size: 24px
+    }
+}
+
+@media (max-width: 400px) {
+    .intro-desc h1 {
+        font-size: 50px
+    }
+
+    .intro-desc p {
+        font-size: 22px
+    }
+}
+
+/* Page Two */
+
+.main {
+    color: #212529;
+    text-align: center;
+    padding: 50px 10px
+}
+
+.main h2 {
+    font-size: 32px;
+    font-weight: 700
+}
+
+.main p {
+    font-size: 20px;
+    margin: 20px 0
+}
+
+.main-btn {
+    padding: 15px;
+    background: #343a40;
+    border: 3px solid #343a40;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
+    -ms-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
+    -o-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center
+}
+
+.main-btn a {
+    color: white
+}
+
+.main-btn:hover {
+    background: #212529
+}
+
+/* Media Query For Page Two */
+
+@media (max-width: 500px) {
+    .main h2 {
+        font-size: 28px
+    }
+
+    .main p {
+        font-size: 16px
+    }
+}
+
+/* Page Three */
+
+.service {
+    padding: 100px 0;
+    background: #1d809f;
+    text-align: center
+}
+
+.service h2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ecb807
+}
+
+.service span {
+    color: white;
+    font-size: 48px;
+    font-weight: 700
+}
+
+.icons {
+    padding-top: 50px;
+    display: flex;
+    width: 90%;
+    margin: auto
+}
+
+.icons li {
+    flex: 1;
+    margin: 12px 0;
+    list-style: none
+}
+
+.icons li i {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    background: #fff;
+    color: #1d809f;
+    border-radius: 50%;
+    font-size: 36px;
+    margin-bottom: 15px
+}
+
+.icons h4 {
+    color: white;
+    font-weight: 700;
+    font-size: 20px
+}
+
+.icons p {
+    color: rgba(255, 255, 255, .7)
+}
+
+/* Media Query For Page Three */
+
+@media (max-width: 925px) {
+    .service span {
+        font-size: 34px
+    }
+
+    .icons {
+        flex-direction: column
+    }
+
+    .icons h4 {
+        font-size: 18px
+    }
+
+    .icons p {
+        font-size: 15px
+    }
+}
+
+/* Page Four */
+
+.next {
+    background: url(../img/439233.jpg) no-repeat fixed 0 0/cover;
+    height: 730px;
+    text-align: center;
+    position: relative
+}
+
+.nex-info {
+    position: absolute;
+    width: 100%;
+    padding: 0 15px;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.next p {
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #212529
+}
+
+.next p span {
+    font-style: oblique
+}
+
+/* Media Query For Page Four */
+
+@media (max-width: 650px) {
+    .next p {
+        font-size: 60px
+    }
+}
+
+@media (max-width: 550px) {
+    .next p {
+        font-size: 50px
+    }
+}
+
+@media (max-width: 400px) {
+    .next p {
+        font-size: 40px
+    }
+}
+
+/* Page Five */
+
+.projects {
+    padding: 100px 0;
+    text-align: center
+}
+
+.projects h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ecb807
+}
+
+.projects h2 {
+    color: #212529;
+    font-weight: 700;
+    font-size: 44px;
+    margin-bottom: 50px
+}
+
+.photos {
+    width: 80%;
+    margin: auto;
+    overflow: hidden
+}
+
+.photo-desc {
+    text-align: left;
+    color: white;
+    padding: 20px
+}
+
+.photos h4 {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px
+}
+
+.photos p {
+    font-size: 18px;
+    font-weight: 300
+}
+
+.photo {
+    width: 50%;
+    height: 400px;
+    position: relative;
+    -webkit-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    float: left
+}
+
+.photo1 {
+    background: url(../img/portfolio-1.jpg)
+}
+
+.photo2 {
+    background: url(../img/portfolio-2.jpg)
+}
+
+.photo3 {
+    background: url(../img/portfolio-3.jpg)
+}
+
+.photo4 {
+    background: url(../img/portfolio-4.jpg)
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #1d809f;
+    opacity: 0
+}
+
+.photo:hover {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8)
+}
+
+.photo:hover .overlay {
+    opacity: 0.7
+}
+
+/* Media Query For Page Five */
+
+@media (max-width: 1100px) {
+    .photos {
+        width: 96%
+    }
+}
+
+@media (max-width: 700px) {
+    .photo {
+        float: none;
+        width: 100%
+    }
+}
+
+/* Page Six */
+
+.contact {
+    padding: 75px 0;
+    background: #1d809f;
+    text-align: center
+}
+
+.contact p {
+    padding: 0 10px;
+    color: white;
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 10px
+}
+
+.white-btn {
+    padding: 15px;
+    border: 2px solid #f8f9fa;
+    background: #f8f9fa;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    margin: 10px
+}
+
+.white-btn a {
+    color: #212529;
+    cursor: pointer
+}
+
+.black-btn {
+    padding: 15px;
+    border: 2px solid #212529;
+    background: #212529;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    margin: 10px
+}
+
+.black-btn a {
+    color: #f8f9fa
+}
+
+/* Media Query For Page Six */
+
+@media (max-width: 750px) {
+    .contact p {
+        font-size: 30px
+    }
+}
+
+@media (max-width: 550px) {
+    .contact p {
+        font-size: 27px
+    }
+}
+
+/* Page Map */
+
+/* Last Page */
+
+.footer {
+    padding: 40px 0;
+    text-align: center
+}
+
+.list {
+    list-style: none;
+    word-spacing: 10px
+}
+
+.list li {
+    text-align: center;
+    display: inline-block
+}
+
+.list li i {
+    background: #1d809f;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    border-radius: 50%;
+    font-size: 24px;
+    -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
+    -ms-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
+    -o-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
+    -webkit-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s
+}
+
+.list li i:hover {
+    background: #17a2b8
+}
+
+.footer p {
+    color: #6c757d;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 20px
+}
