@@ -13,7 +13,10 @@ Contact Me: fatema131khaled@gmail.com
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
+    -o-box-sizing: border-box
+}
+
+body {
     font-family: 'Source Sans Pro', sans-serif
 }
 
@@ -21,6 +24,34 @@ a {
     text-decoration: none;
     cursor: pointer
 }
+
+h1,
+h2,
+p {
+    overflow-wrap: anywhere
+}
+
+.list li i,
+.intro-btn,
+.next-btn,
+.main-btn {
+    -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
+    -ms-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
+    -o-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
+}
+
+.list li i,
+.photo {
+    -webkit-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+/* Start Sidebar */
 
 .clickme i {
     width: 50px;
@@ -75,7 +106,6 @@ a {
 
 .sidebar-list h2 {
     font-size: 20px;
-    font-weight: 400;
     background: rgba(52, 58, 64, .1);
     height: 70px;
     line-height: 70px;
@@ -84,8 +114,8 @@ a {
 }
 
 .sidebar-list li {
+    text-align: center;
     font-size: 18px;
-    font-weight: 300;
     padding: 5px
 }
 
@@ -94,29 +124,35 @@ a {
     cursor: pointer
 }
 
-@media (max-width: 300px) {
+@media (max-width: 480px) {
     .sidebar-list {
         width: 100%
     }
 }
 
-/* Page One */
+/* End Sidebar */
 
-.intro {
+/* Start Page One */
+
+.intro,
+.next {
     background: url(../img/130519.jpg) no-repeat scroll 0 0/cover;
-    height: 700px
+    width: 100%;
+    height: 100vh;
+    display: table
 }
 
-.intro-desc {
+.intro-desc,
+.next-info {
     color: #212529;
     text-align: center;
-    width: 100%;
-    padding: 0 10px;
-    padding-top: 250px
+    display: table-cell;
+    vertical-align: middle;
+    padding: 7px;
 }
 
 .intro-desc h1 {
-    font-size: 75px
+    font-size: 65px
 }
 
 .intro-desc p {
@@ -132,14 +168,7 @@ a {
     background: #17a2b8;
     border: 3px solid #17a2b8;
     border-radius: 4px;
-    -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
-    -moz-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
-    -ms-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
-    -o-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
-    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
-    font-weight: 700;
     font-size: 16px;
-    text-align: center
 }
 
 .intro-btn a,
@@ -152,29 +181,9 @@ a {
     background: #1d809f
 }
 
-/* Media Query For Page One */
+/* End Page One */
 
-@media (max-width: 500px) {
-    .intro-desc h1 {
-        font-size: 60px
-    }
-
-    .intro-desc p {
-        font-size: 24px
-    }
-}
-
-@media (max-width: 400px) {
-    .intro-desc h1 {
-        font-size: 50px
-    }
-
-    .intro-desc p {
-        font-size: 22px
-    }
-}
-
-/* Page Two */
+/* Start Page Two */
 
 .main {
     color: #212529;
@@ -183,8 +192,7 @@ a {
 }
 
 .main h2 {
-    font-size: 32px;
-    font-weight: 700
+    font-size: 32px
 }
 
 .main p {
@@ -197,12 +205,6 @@ a {
     background: #343a40;
     border: 3px solid #343a40;
     border-radius: 4px;
-    -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
-    -moz-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
-    -ms-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
-    -o-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
-    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
-    font-weight: 700;
     font-size: 16px;
     text-align: center
 }
@@ -215,48 +217,35 @@ a {
     background: #212529
 }
 
-/* Media Query For Page Two */
+/* End Page Two */
 
-@media (max-width: 500px) {
-    .main h2 {
-        font-size: 28px
-    }
-
-    .main p {
-        font-size: 16px
-    }
-}
-
-/* Page Three */
+/* Start Page Three */
 
 .service {
-    padding: 100px 0;
+    padding: 100px 10px;
     background: #1d809f;
     text-align: center
 }
 
 .service h2 {
     font-size: 16px;
-    font-weight: 700;
     color: #ecb807
 }
 
 .service span {
     color: white;
     font-size: 48px;
-    font-weight: 700
 }
 
 .icons {
     padding-top: 50px;
     display: flex;
-    width: 90%;
     margin: auto
 }
 
 .icons li {
     flex: 1;
-    margin: 12px 0;
+    margin: 10px;
     list-style: none
 }
 
@@ -273,7 +262,6 @@ a {
 
 .icons h4 {
     color: white;
-    font-weight: 700;
     font-size: 20px
 }
 
@@ -281,50 +269,22 @@ a {
     color: rgba(255, 255, 255, .7)
 }
 
-/* Media Query For Page Three */
-
-@media (max-width: 925px) {
-    .service span {
-        font-size: 34px
-    }
-
+@media (max-width: 768px) {
     .icons {
         flex-direction: column
     }
-
-    .icons h4 {
-        font-size: 18px
-    }
-
-    .icons p {
-        font-size: 15px
-    }
 }
 
-/* Page Four */
+/* End Page Three */
+
+/* Start Page Four */
 
 .next {
-    background: url(../img/439233.jpg) no-repeat fixed 0 0/cover;
-    height: 730px;
-    text-align: center;
-    position: relative
-}
-
-.nex-info {
-    position: absolute;
-    width: 100%;
-    padding: 0 15px;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%)
+    background: url(../img/439233.jpg) no-repeat fixed 0 0/cover
 }
 
 .next p {
-    font-size: 70px;
+    font-size: 60px;
     font-weight: bold;
     margin-bottom: 20px;
     color: #212529
@@ -334,48 +294,27 @@ a {
     font-style: oblique
 }
 
-/* Media Query For Page Four */
+/* End Page Four */
 
-@media (max-width: 650px) {
-    .next p {
-        font-size: 60px
-    }
-}
-
-@media (max-width: 550px) {
-    .next p {
-        font-size: 50px
-    }
-}
-
-@media (max-width: 400px) {
-    .next p {
-        font-size: 40px
-    }
-}
-
-/* Page Five */
+/* Start Page Five */
 
 .projects {
-    padding: 100px 0;
+    padding: 100px 10px;
     text-align: center
 }
 
 .projects h3 {
     font-size: 16px;
-    font-weight: 700;
     color: #ecb807
 }
 
 .projects h2 {
     color: #212529;
-    font-weight: 700;
     font-size: 44px;
     margin-bottom: 50px
 }
 
 .photos {
-    width: 80%;
     margin: auto;
     overflow: hidden
 }
@@ -389,24 +328,18 @@ a {
 .photos h4 {
     text-transform: uppercase;
     font-size: 14px;
-    font-weight: 700;
     margin-bottom: 10px
 }
 
 .photos p {
     font-size: 18px;
-    font-weight: 300
 }
 
 .photo {
+    background-position: center;
     width: 50%;
     height: 400px;
     position: relative;
-    -webkit-transition: .5s;
-    -ms-transition: .5s;
-    -moz-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s;
     float: left
 }
 
@@ -437,36 +370,30 @@ a {
 }
 
 .photo:hover {
-    -webkit-transform: scale(0.8);
-    -moz-transform: scale(0.8);
-    -o-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    transform: scale(0.8)
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9)
 }
 
 .photo:hover .overlay {
     opacity: 0.7
 }
 
-/* Media Query For Page Five */
-
-@media (max-width: 1100px) {
-    .photos {
-        width: 96%
-    }
-}
-
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     .photo {
         float: none;
         width: 100%
     }
 }
 
-/* Page Six */
+/* End Page Five */
+
+/* Start Page Six */
 
 .contact {
-    padding: 75px 0;
+    padding: 75px 10px;
     background: #1d809f;
     text-align: center
 }
@@ -475,7 +402,6 @@ a {
     padding: 0 10px;
     color: white;
     font-size: 34px;
-    font-weight: 700;
     margin-bottom: 10px
 }
 
@@ -484,7 +410,6 @@ a {
     border: 2px solid #f8f9fa;
     background: #f8f9fa;
     font-size: 16px;
-    font-weight: 700;
     border-radius: 4px;
     margin: 10px
 }
@@ -499,35 +424,20 @@ a {
     border: 2px solid #212529;
     background: #212529;
     font-size: 16px;
-    font-weight: 700;
     border-radius: 4px;
-    margin: 10px
+    margin: 5px
 }
 
 .black-btn a {
     color: #f8f9fa
 }
 
-/* Media Query For Page Six */
+/* End Page Six */
 
-@media (max-width: 750px) {
-    .contact p {
-        font-size: 30px
-    }
-}
-
-@media (max-width: 550px) {
-    .contact p {
-        font-size: 27px
-    }
-}
-
-/* Page Map */
-
-/* Last Page */
+/* Start Last Page */
 
 .footer {
-    padding: 40px 0;
+    padding: 40px 10px;
     text-align: center
 }
 
@@ -549,16 +459,6 @@ a {
     color: white;
     border-radius: 50%;
     font-size: 24px;
-    -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
-    -moz-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
-    -ms-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
-    -o-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
-    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
-    -webkit-transition: .5s;
-    -ms-transition: .5s;
-    -moz-transition: .5s;
-    -o-transition: .5s;
-    transition: .5s
 }
 
 .list li i:hover {
@@ -568,6 +468,7 @@ a {
 .footer p {
     color: #6c757d;
     font-size: 14px;
-    font-weight: 400;
     margin-top: 20px
 }
+
+/* End Last Page */
