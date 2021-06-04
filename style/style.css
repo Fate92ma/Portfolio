@@ -291,6 +291,7 @@ p {
 }
 
 .next p span {
+    display: block;
     font-style: oblique
 }
 
